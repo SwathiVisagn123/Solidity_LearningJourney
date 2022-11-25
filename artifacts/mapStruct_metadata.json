@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_registration_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "NHS_Number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "Vaccinated",
+						"type": "bool"
+					}
+				],
+				"name": "input",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "registration_number",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "NHS_Number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "Vaccinated",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"mapping2.sol": "mapStruct"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"mapping2.sol": {
+			"keccak256": "0xabac9bdfd5eef479d56e4a6b8396f6ea6cf3b118a8355f309a862e50939ca987",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc114eea64d5003ed33c90dbc94f4dd4437e38057677d893a1be33bffdca35d4",
+				"dweb:/ipfs/QmTmYHnHeJUSX95cRWTMDKqb6GWyZ6XvPRUTPPfxXL3FEE"
+			]
+		}
+	},
+	"version": 1
+}
