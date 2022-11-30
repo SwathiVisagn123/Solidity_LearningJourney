@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "fibo",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice_fibonacci.sol": "FibonacciArray"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practice_fibonacci.sol": {
+			"keccak256": "0x48564a66dc11e19c9fa58e99a8b4df04191b0f25c99d6d910d282987ad5a81c9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6169fcd8d6d261bcd3876f2cf8e9dcc26f6fd405e3dcb9e625d16a1a288036ff",
+				"dweb:/ipfs/QmSYh7PoJjcSS5dF5hFqwhL2Ch4QAjRxhZQ92vJxqMrriV"
+			]
+		}
+	},
+	"version": 1
+}
