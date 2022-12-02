@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"assert.sol": "Assert"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"assert.sol": {
+			"keccak256": "0x1dfa5993f37714d1cdb83f09e7b256217f5ecc31639438369a0d5e093f3120aa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://71f2743b8a8b8fa0c3b9b53b995b14b90544549d773732ad1eef6a71caaf780f",
+				"dweb:/ipfs/QmNo3MS6VHpMJQGcns4bBedAKtYRNt1PdHVRvcDbyAiAr4"
+			]
+		}
+	},
+	"version": 1
+}
