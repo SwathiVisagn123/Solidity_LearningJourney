@@ -202,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC20.sol": "ERC20Interface"
+			"ICO.sol": "ERC20Interface"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -216,12 +216,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ERC20.sol": {
-			"keccak256": "0x311007c18b0ea6dd2cbb8f64ba70761cf4ad8e92ac8f8dc40d5ade7ff564445e",
+		"ICO.sol": {
+			"keccak256": "0x5da5cbf1d631339b60f7044a9623b6623c5d01add46e08d4f9df83367e87435d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e9617079afbde8ee270b83f7dab7fa61c924e77a0ac5d64e1719c8e0252db416",
-				"dweb:/ipfs/QmavAw57nxYxrGaYmL9gKaNkerbDMQw9SaV7QV9vPzFGuX"
+				"bzz-raw://24c63317c1ccc5c8b2ad4b9d257002c61e3cb33828cf01c9e924208dc6f64164",
+				"dweb:/ipfs/QmNTrrngrxCNVChi1KZLsBsuNRPPiJdZmnDbf1CgNWQ5V1"
 			]
 		}
 	},

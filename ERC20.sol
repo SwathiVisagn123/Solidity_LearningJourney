@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0 <0.9.0;
 
+//refer to https://docs.openzeppelin.com/contracts/2.x/api/token/erc20
+
 interface ERC20Interface{
     //returns total number of tokens in existence
     function totalSupply() external view returns (uint);
@@ -17,7 +19,7 @@ interface ERC20Interface{
     //sets the amount of tokens as the allowance of spender over caller's tokens;emits approval event
     function approve(address spender, uint tokens) external returns (bool success);
 
-//transferFrom uses allowance mechanism, this will move tokens 'from' to 'to' and deducts token from allowance
+    //transferFrom uses allowance mechanism, this will move tokens 'from' to 'to' and deducts token from allowance
     //moves the amount of tokens 'from' sender 'to' recipent and amount is deducted from the caller's allowance set for spender;Emits a transfer event
     function transferFrom(address from, address to, uint tokens) external returns (bool success);
 
@@ -45,10 +47,10 @@ contract Block is ERC20Interface {
     }
 
     function balanceOf(address tokenOwner) public view override returns (uint tokens){
-
         return balances[tokenOwner];
     }
 
+    //founder to tokenOwner(as founder is only person who has total supply)
     function transfer(address to,uint tokens) public override returns (bool success){
 
         require(balances[msg.sender]>=tokens,"Insufficient balance");
@@ -58,20 +60,21 @@ contract Block is ERC20Interface {
         return true;
     }
 
+    // tokenOwner approves certain tokens to spender over tokenOwner's tokens. tokenOwner is caller from this function.
     function approve(address spender,uint tokens) public override returns(bool success){
-
         require(tokens>0);
         require(balances[msg.sender]>=tokens,"Insufficient balance");
         allowed[msg.sender][spender]=tokens;
         emit Approval(msg.sender,spender,tokens);
-        return true;
-        
+        return true; 
     }
 
+    //returns token allowance from nested mapping
     function allowance(address tokenOwner,address spender) public view override returns(uint noOftokens){
         return allowed[tokenOwner][spender];
     }
 
+    //transfer tokens from tokenOwner to spender and the tokens must be <=approved tokens
     function transferFrom(address from,address to,uint tokens) public override returns(bool success){
         require(allowed[from][to]>=tokens); //checks allowance is >=tokens
         require(balances[from]>=tokens,"Insufficient Balance");
@@ -81,3 +84,12 @@ contract Block is ERC20Interface {
     }
 
 }
+
+//TOKEN CREATION
+
+//Connect metamask to testnet, address on metamask will show on the Account of Remix
+//Deploy the contract on testnet, confirm transaction on metamask, can see the transaction on etherscan now
+//Once transaction is success;copy the contract address;Goto Metamask=>assets=>import tokens=>paste token contract address
+//Enter token decimal and import custom token
+//The address of founder on metamask now will get the total supply of 100000
+//Now we can transfer these tokens to another address using transfer function which we can see on Metamask UI
