@@ -7,7 +7,19 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "balance",
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "invest",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "max",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -19,14 +31,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "richest",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
 					}
 				],
-				"name": "deposit",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -45,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"assert.sol": "Assert"
+			"DesignPattern_WithdrawalPattern.sol": "findRichest"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +78,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"assert.sol": {
-			"keccak256": "0x5adc467ffad2faf1e118fa70ae6994cfc9bba0fbaa63c9b664feecce5497344f",
+		"DesignPattern_WithdrawalPattern.sol": {
+			"keccak256": "0xddbce7c92efa3384873c23cccb6202d1dad8ae38be198e12dd6f46d8218d2c0b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e3915d52c1f8ba534bac2c29fe9e5f7f072def5423e118d952197d7faad25706",
-				"dweb:/ipfs/QmaMEx41Q4s91zV1V1jyrwpw4XyEGsCojsdwiDJn1XZBWZ"
+				"bzz-raw://ccbeefe579e0018ad8789aee780c6822b6c8ed4b94efcf2298c5d25e0c27bcc9",
+				"dweb:/ipfs/QmcDK1y3d2VSf9aBw6sTW5s372y28KdK4QPEJnS2TFeJrM"
 			]
 		}
 	},

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DesignPattern_FactoryPattern.sol": "Employee"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DesignPattern_FactoryPattern.sol": {
+			"keccak256": "0x79bc4ff46a18678c8b71bf4ae2aeb0f614588f6e25f6589af61f8bb9021a2137",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0276cedf70944cc1c2cd84b4cd37166ce35bed2d8b49226526a1bec4576908ef",
+				"dweb:/ipfs/QmVtcdQeqUoJkaJNyCjRtmHa2JCDrj5F3KfYKht9RomqL6"
+			]
+		}
+	},
+	"version": 1
+}
